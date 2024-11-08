@@ -15,8 +15,11 @@
     "@tailwindcss/typography": "^0.5.15",
     "drizzle-orm": "^0.34.1",
     "elysia": "latest",
+    "file-type": "^19.6.0",
     "lucide": "^0.453.0",
+    "minio": "^8.0.2",
     "pg": "^8.13.0",
+    "short-unique-id": "^5.2.0",
     "zod": "^3.23.8"
   },
   "devDependencies": {
