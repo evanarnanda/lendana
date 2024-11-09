@@ -1,5 +1,5 @@
 import { Elysia } from "elysia";
-import { html, Html } from '@elysiajs/html';
+import { html } from '@elysiajs/html';
 import { staticPlugin } from '@elysiajs/static'
 import { tailwind } from "@gtramontina.com/elysia-tailwind";
 import { swagger } from "@elysiajs/swagger";

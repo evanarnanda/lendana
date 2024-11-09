@@ -2,12 +2,11 @@ import Elysia from "elysia";
 import { Html } from "@elysiajs/html";
 import BaseHtml from "../../component/common/base";
 import NavBar from "../../component/common/navbar";
-import FirstComponent from "../../component/FirstComponent";
-import Test from "../../component/Text";
 import { validateSessionToken } from "../../lib/auth";
 import Footer from "../../component/common/footer";
 import { MinioLendanaPublicClient } from "../../lib/minio";
 import { env } from "../../../env";
+import Hero from "./component/Hero";
 
 const landingRoute = new Elysia()
   .get('/', async ({ cookie }) => { 
@@ -26,8 +25,7 @@ const landingRoute = new Elysia()
         <>
           <NavBar user={user} icon={iconUrl}/>
           <div class='flex flex-col justify-center items-center h-screen'>
-            <FirstComponent />
-            <Test />
+            <Hero user={user}/>
           </div>
           <Footer icon={iconUrl}/>
         </>

@@ -44,3 +44,5 @@ package-lock.json
 
 services
 services/*
+
+server

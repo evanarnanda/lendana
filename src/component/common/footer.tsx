@@ -1,8 +1,5 @@
 import { Html } from "@elysiajs/html";
-import { User } from "../../db/schemas/auth";
-import { Spinner } from "./loading/spinner";
-import { MinioLendanaPublicClient } from "../../lib/minio";
-import { env } from "../../../env";
+import ThemeController from "../theme-controller";
 
 interface Props {
   icon: string
@@ -14,9 +11,9 @@ export default async function Footer ({ icon }: Props) {
       <aside>
           <p class="text-3xl flex items-center gap-2">
               <img alt="Logo" src={icon} class="inline w-6" />
-              Company
+              Lendana
           </p>
-          <small>Copyright © 2024 - All rights reserved</small>
+          <small>Evan © 2024 - All rights reserved</small>
       </aside>
 
       <nav class="flex gap-4">
@@ -32,6 +29,7 @@ export default async function Footer ({ icon }: Props) {
           <a class="btn btn-ghost btn-sm btn-circle">
               <i class="fa-brands fa-youtube text-2xl"></i>
           </a>
+          <ThemeController />
       </nav>
     </footer>
   )
