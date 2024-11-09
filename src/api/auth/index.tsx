@@ -203,7 +203,6 @@ export const authRoutes = new Elysia({prefix: '/auth'})
       set.headers['HX-Redirect'] = '/'
       set.status = 303
     } else {
-      console.log(deletedId)
       cookie.session.remove()
       delete cookie.session
       set.headers['HX-Redirect'] = '/'

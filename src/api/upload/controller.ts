@@ -1,6 +1,6 @@
 import ShortUniqueId from "short-unique-id";
 import { isMetaDataImg } from "../../utils/extension";
-import MinioClient from "../../lib/minio";
+import { MinioClient } from "../../lib/minio";
 import { env } from "../../../env";
 
 export const UploadController = {

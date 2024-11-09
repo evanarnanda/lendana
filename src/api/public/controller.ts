@@ -1,5 +1,5 @@
 import { env } from "../../../env";
-import MinioClient from "../../lib/minio";
+import {MinioClient} from "../../lib/minio";
 
 export const PulicController = {
   publicLinkFile: async ({ file_name }: { file_name: string }) => {

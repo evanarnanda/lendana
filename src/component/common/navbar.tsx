@@ -4,12 +4,18 @@ import { Spinner } from "./loading/spinner";
 
 interface Props {
   user: User | null
+  icon: string
 }
-export default function NavBar ({user}: Props) {
+export default async function NavBar ({ user, icon }: Props) {
+
   return (
     <div class="navbar bg-base-100">
       <div class="flex-1">
-        <a class="btn btn-ghost text-xl">daisyUI</a>
+      <div class="avatar">
+        <div class="mask mask-squircle">
+          <img src={icon} />
+        </div>
+      </div>
       </div>
       <div class="flex-none">
         {

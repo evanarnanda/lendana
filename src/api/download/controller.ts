@@ -1,5 +1,5 @@
 import { fileTypeFromBuffer } from "file-type";
-import MinioClient from "../../lib/minio";
+import { MinioClient } from "../../lib/minio";
 import { env } from "../../../env";
 
 export const DownloadController = {

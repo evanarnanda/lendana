@@ -6,7 +6,6 @@ import { validateSessionToken } from "../../lib/auth";
 const auth = new Elysia( { prefix: '/auth' } )
 .onBeforeHandle( async({ cookie, redirect }) => {
   const token = cookie.session.value
-  console.log(token)
 
   const { session, user } = await validateSessionToken(token ?? '')
 
